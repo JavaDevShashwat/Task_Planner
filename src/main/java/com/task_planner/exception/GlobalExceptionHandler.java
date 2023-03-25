@@ -25,7 +25,7 @@ public class GlobalExceptionHandler {
 		
 	}
 	
-	@ExceptionHandler(UserException.class)
+	@ExceptionHandler(SprintException.class)
 	public ResponseEntity<MyErrorDetails> sprintExceptionHandler(SprintException se, WebRequest req){
 		
 		
@@ -38,7 +38,7 @@ public class GlobalExceptionHandler {
 		
 	}
 	
-	@ExceptionHandler(UserException.class)
+	@ExceptionHandler(TaskException.class)
 	public ResponseEntity<MyErrorDetails> taskExceptionHandler(TaskException te, WebRequest req){
 		
 		

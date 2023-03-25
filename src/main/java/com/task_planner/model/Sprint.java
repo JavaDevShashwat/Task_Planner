@@ -28,6 +28,6 @@ public class Sprint {
 	private LocalDateTime creationDateTime = LocalDateTime.now();
 	
 	@JsonIgnore
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "tasks",fetch=FetchType.EAGER)
+	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.EAGER)
 	private List<Task> tasks = new ArrayList<>();
 }

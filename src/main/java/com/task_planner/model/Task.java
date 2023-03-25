@@ -36,6 +36,6 @@ public class Task {
 	private String status;
 	
 	@JsonIgnore
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "assignee",fetch=FetchType.EAGER)
+	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.EAGER)
 	private List<Person> assignee = new ArrayList<>();
 }
